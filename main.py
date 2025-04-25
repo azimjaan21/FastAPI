@@ -2,6 +2,6 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/firstStep")
-async def root():
-    return {"message": "I started FastAPI! Bro new era...."}
+@app.get("/")
+def root():
+    return {"message": "Hello, FastAPI is running!"}
